@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+$nav-text-color: #edf0f1;
+$logo-color: rgb(9, 202, 193);
+$dark-color: #24252a;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  font-family: "Montserrat", sans-serif;
+  background-color: $dark-color;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $nav-text-color;
+  padding: 30px 10%;
+  border-bottom: $logo-color solid 1px;
+
+  h1 {
+    color: $logo-color;
+  }
+
+  .btn {
+    text-decoration: none;
+    color: $dark-color;
+    background-color: $nav-text-color;
+    padding: 7px 20px;
+    border-radius: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &_links {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 0 20px;
+
+      a {
+        transition: all 0.3s ease 0s;
+        &:hover {
+          color: rgb(8, 193, 250);
+        }
+      }
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  margin: auto;
+  padding: 30px 10%;
+  gap: 1rem 1rem;
+}
+
+.news-card {
+  &_content {
+    background-color: #caeeec;
+    padding: 1rem;
+
+    .catogray {
+      color: rgb(161, 157, 157);
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 12rem;
+  }
+}
