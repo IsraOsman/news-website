@@ -3,6 +3,7 @@ $nav-text-color: #edf0f1;
 $logo-color: rgb(9, 202, 193);
 $dark-gray-color: #24252a;
 $aqua-color: #c2eeee;
+$medium-gray: rgb(138, 133, 133);
 
 * {
   box-sizing: border-box;
@@ -79,7 +80,7 @@ $aqua-color: #c2eeee;
     display: block;
 
     .category {
-      color: rgb(138, 133, 133);
+      color: $medium-gray;
       font-size: 1rem;
       text-transform: uppercase;
       padding-bottom: 10px;
@@ -88,11 +89,66 @@ $aqua-color: #c2eeee;
     .title {
       padding-bottom: 6px;
     }
+
+    .date {
+      color: $medium-gray;
+    }
+
+    .text {
+      padding-top: 4px;
+    }
+
+    .readMore-btn {
+      background-color: white;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      display: inline-block;
+      text-decoration: none;
+    }
   }
 
   img {
     width: 100%;
     height: 15rem;
     display: block;
+    padding: 5px;
+    background-color: $aqua-color;
+    border-radius: 3px;
+  }
+}
+
+.form {
+  margin-top: 10rem;
+  padding: 0 7%;
+
+  .label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+  }
+
+  input {
+    height: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+
+  textarea {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    height: 38vh;
+    width: 80%;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: $dark-gray-color;
+    padding: 1rem 2.5rem;
+    border-radius: 1.5rem;
+    margin-left: 2rem;
   }
 }

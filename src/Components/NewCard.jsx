@@ -2,6 +2,9 @@ import React from "react";
 import Enter1 from "../imgs/politics.jpg";
 
 function NewCard(props) {
+  let today = new Date();
+  var date =
+    today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
   return (
     <div className="news-card">
       <div className="news-card_img">
@@ -10,8 +13,11 @@ function NewCard(props) {
       <div className="news-card_content">
         <div className="category">{props.category}</div>
         <h3 className="title">{props.title}</h3>
-        <span className="date">Published: </span>
+        <span className="date">{date}</span>
         <p className="text">{props.text}</p>
+        <a href="#" className="readMore-btn">
+          Read More
+        </a>
       </div>
     </div>
   );
