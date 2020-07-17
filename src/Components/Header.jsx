@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
       <div>
         <div className="nav">
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/Grid" style={{ textDecoration: "none" }}>
             <h1>NEWS</h1>
           </Link>
           <nav>
