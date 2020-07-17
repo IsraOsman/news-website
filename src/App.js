@@ -12,7 +12,7 @@ function App() {
       <div>
         <Header />
         <Switch>
-          <Route path="/" exact component={Grid} />
+          <Route path="/Grid" exact component={Grid} />
           <Route path="/publish" component={Form} />
         </Switch>
       </div>
