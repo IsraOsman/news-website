@@ -47,9 +47,12 @@ $medium-gray: rgb(138, 133, 133);
     li {
       display: inline-block;
       padding: 0 20px;
+      color: $nav-text-color;
+      text-decoration: none;
 
       a {
         transition: all 0.3s ease 0s;
+        text-decoration: none;
         &:hover {
           color: rgb(8, 193, 250);
         }
@@ -72,7 +75,7 @@ $medium-gray: rgb(138, 133, 133);
 }
 
 .news-card {
-  height: 32rem;
+  height: auto;
 
   &_content {
     padding: 1rem;
@@ -96,14 +99,18 @@ $medium-gray: rgb(138, 133, 133);
 
     .text {
       padding-top: 4px;
+      margin-bottom: 1rem;
     }
 
     .readMore-btn {
+      color: $dark-gray-color;
       background-color: white;
-      border-radius: 0.5rem;
+      border-radius: 1px;
       padding: 0.5rem;
       display: inline-block;
       text-decoration: none;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.19);
     }
   }
 
@@ -111,14 +118,14 @@ $medium-gray: rgb(138, 133, 133);
     width: 100%;
     height: 15rem;
     display: block;
-    padding: 5px;
+    padding: 3px;
     background-color: $aqua-color;
     border-radius: 3px;
   }
 }
 
 .form {
-  margin-top: 10rem;
+  margin-top: 9rem;
   padding: 0 7%;
 
   .label {
@@ -127,7 +134,7 @@ $medium-gray: rgb(138, 133, 133);
     display: block;
   }
 
-  input {
+  .title-input {
     height: 2rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
@@ -137,17 +144,29 @@ $medium-gray: rgb(138, 133, 133);
   textarea {
     display: block;
     margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-left: 2rem;
     height: 38vh;
     width: 80%;
   }
 
-  a {
-    text-decoration: none;
+  .categroy-btns {
+    margin-bottom: 0.8rem;
+
+    .categroy-btn {
+      display: inline-block;
+      margin-top: 0.6rem;
+      margin-left: 2rem;
+      input {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .btn {
     color: white;
     background-color: $dark-gray-color;
-    padding: 1rem 2.5rem;
+    padding: 0.5rem 3rem;
     border-radius: 1.5rem;
     margin-left: 2rem;
   }

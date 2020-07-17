@@ -1,5 +1,4 @@
 import React from "react";
-import Enter1 from "../imgs/politics.jpg";
 
 function NewCard(props) {
   let today = new Date();
@@ -8,7 +7,7 @@ function NewCard(props) {
   return (
     <div className="news-card">
       <div className="news-card_img">
-        <img src={Enter1} alt="img" />
+        <img src={props.img} alt="img" />
       </div>
       <div className="news-card_content">
         <div className="category">{props.category}</div>

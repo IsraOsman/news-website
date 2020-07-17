@@ -1,35 +1,46 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   render() {
     return (
       <div>
         <div className="nav">
-          <h1>NEWS</h1>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <h1>NEWS</h1>
+          </Link>
           <nav>
             <ul className="nav_links">
-              <li>
-                <a>Health</a>
-              </li>
-              <li>
-                <a>Politics</a>
-              </li>
-              <li>
-                <a>Technology</a>
-              </li>
-              <li>
-                <a>Food</a>
-              </li>
-              <li>
-                <a>Entertainment</a>
-              </li>
+              <Link to="/">
+                <li>
+                  <a>Health</a>
+                </li>
+              </Link>
+              <Link to="/">
+                <li>
+                  <a>Politics</a>
+                </li>
+              </Link>
+              <Link to="/">
+                <li>
+                  <a>Technology</a>
+                </li>
+              </Link>
+              <Link to="/">
+                <li>
+                  <a>Sports</a>
+                </li>
+              </Link>
+              <Link to="/">
+                <li>
+                  <a>Entertainment</a>
+                </li>
+              </Link>
             </ul>
           </nav>
-          <a className="btn" href="#">
+
+          <a className="btn" href="/publish">
             Publish
-          </a>
-          <a className="btn" href="#">
-            Subscribe
           </a>
         </div>
       </div>
