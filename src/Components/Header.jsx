@@ -11,31 +11,25 @@ class Header extends React.Component {
           </Link>
           <nav>
             <ul className="nav_links">
-              <Link to="/">
-                <li>
-                  <a>Health</a>
-                </li>
-              </Link>
-              <Link to="/">
-                <li>
-                  <a>Politics</a>
-                </li>
-              </Link>
-              <Link to="/">
-                <li>
-                  <a>Technology</a>
-                </li>
-              </Link>
-              <Link to="/">
-                <li>
-                  <a>Sports</a>
-                </li>
-              </Link>
-              <Link to="/">
-                <li>
-                  <a>Entertainment</a>
-                </li>
-              </Link>
+              <li>
+                <a>Health</a>
+              </li>
+
+              <li>
+                <a>Politics</a>
+              </li>
+
+              <li>
+                <a>Technology</a>
+              </li>
+
+              <li>
+                <a>Sports</a>
+              </li>
+
+              <li>
+                <a>Entertainment</a>
+              </li>
             </ul>
           </nav>
 

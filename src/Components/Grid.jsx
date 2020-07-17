@@ -71,9 +71,8 @@ function Grid() {
   ];
 
   const newsList = news.map((news, index) => (
-    <div className="grid_item">
+    <div className="grid_item" key={index}>
       <NewCard
-        key={news.id}
         img={news.img}
         category={news.category}
         title={news.title}
