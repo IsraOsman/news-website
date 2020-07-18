@@ -51,7 +51,7 @@ function Grid() {
 
     {
       id: 5,
-      img: Im1,
+      img: Im5,
       category: "Politics",
       title:
         "Justice Kavanaugh denies emergency request from Illinois GOP groups seeking to hold large rallies",
